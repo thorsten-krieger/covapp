@@ -50,6 +50,8 @@ export namespace Components {
     }
     interface IaLogoD4l {
     }
+    interface IaLogoHeader {
+    }
     interface IaLogoRki {
     }
     interface IaNavigationHeader {
@@ -170,6 +172,12 @@ declare global {
         prototype: HTMLIaLogoD4lElement;
         new (): HTMLIaLogoD4lElement;
     };
+    interface HTMLIaLogoHeaderElement extends Components.IaLogoHeader, HTMLStencilElement {
+    }
+    var HTMLIaLogoHeaderElement: {
+        prototype: HTMLIaLogoHeaderElement;
+        new (): HTMLIaLogoHeaderElement;
+    };
     interface HTMLIaLogoRkiElement extends Components.IaLogoRki, HTMLStencilElement {
     }
     var HTMLIaLogoRkiElement: {
@@ -229,6 +237,7 @@ declare global {
         "ia-logo-charite": HTMLIaLogoChariteElement;
         "ia-logo-component": HTMLIaLogoComponentElement;
         "ia-logo-d4l": HTMLIaLogoD4lElement;
+        "ia-logo-header": HTMLIaLogoHeaderElement;
         "ia-logo-rki": HTMLIaLogoRkiElement;
         "ia-navigation-header": HTMLIaNavigationHeaderElement;
         "ia-qr-code": HTMLIaQrCodeElement;
@@ -287,6 +296,8 @@ declare namespace LocalJSX {
     }
     interface IaLogoD4l {
     }
+    interface IaLogoHeader {
+    }
     interface IaLogoRki {
     }
     interface IaNavigationHeader {
@@ -329,6 +340,7 @@ declare namespace LocalJSX {
         "ia-logo-charite": IaLogoCharite;
         "ia-logo-component": IaLogoComponent;
         "ia-logo-d4l": IaLogoD4l;
+        "ia-logo-header": IaLogoHeader;
         "ia-logo-rki": IaLogoRki;
         "ia-navigation-header": IaNavigationHeader;
         "ia-qr-code": IaQrCode;
@@ -358,6 +370,7 @@ declare module "@stencil/core" {
             "ia-logo-charite": LocalJSX.IaLogoCharite & JSXBase.HTMLAttributes<HTMLIaLogoChariteElement>;
             "ia-logo-component": LocalJSX.IaLogoComponent & JSXBase.HTMLAttributes<HTMLIaLogoComponentElement>;
             "ia-logo-d4l": LocalJSX.IaLogoD4l & JSXBase.HTMLAttributes<HTMLIaLogoD4lElement>;
+            "ia-logo-header": LocalJSX.IaLogoHeader & JSXBase.HTMLAttributes<HTMLIaLogoHeaderElement>;
             "ia-logo-rki": LocalJSX.IaLogoRki & JSXBase.HTMLAttributes<HTMLIaLogoRkiElement>;
             "ia-navigation-header": LocalJSX.IaNavigationHeader & JSXBase.HTMLAttributes<HTMLIaNavigationHeaderElement>;
             "ia-qr-code": LocalJSX.IaQrCode & JSXBase.HTMLAttributes<HTMLIaQrCodeElement>;

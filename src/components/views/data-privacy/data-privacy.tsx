@@ -44,7 +44,7 @@ export class DataPrivacy {
             />
           </div>
           <div class="data_privacy__content u-text-align--left" slot="card-content">
-            <p innerHTML={i18next.t('data_privacy_content')} />
+            <div innerHTML={i18next.t('data_privacy_content')} />
           </div>
         </d4l-card>
       </div>

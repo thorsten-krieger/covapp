@@ -44,7 +44,7 @@ export class Imprint {
             />
           </div>
           <div class="imprint__content u-text-align--left" slot="card-content">
-            <p innerHTML={i18next.t('imprint_content')} />
+            <div innerHTML={i18next.t('imprint_content')} />
           </div>
         </d4l-card>
       </div>
